@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnAllBooks"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="See All Books"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnReadBooks"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Already Read books"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnCurrentBook"
+        app:layout_constraintStart_toStartOf="@+id/btnCurrentBook"
+        app:layout_constraintTop_toBottomOf="@+id/btnCurrentBook" />
+
+    <Button
+        android:id="@+id/btnWishlist"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Your Wishlist"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnReadBooks"
+        app:layout_constraintStart_toStartOf="@+id/btnReadBooks"
+        app:layout_constraintTop_toBottomOf="@+id/btnReadBooks" />
+
+    <Button
+        android:id="@+id/btnFavorites"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="See your Favorites"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnWishlist"
+        app:layout_constraintStart_toStartOf="@+id/btnWishlist"
+        app:layout_constraintTop_toBottomOf="@+id/btnWishlist" />
+
+    <Button
+        android:id="@+id/btnCurrentBook"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Currently Reading book"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnAllBooks"
+        app:layout_constraintStart_toStartOf="@+id/btnAllBooks"
+        app:layout_constraintTop_toBottomOf="@+id/btnAllBooks" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="About"
+        app:layout_constraintEnd_toEndOf="@+id/btnFavorites"
+        app:layout_constraintStart_toStartOf="@+id/btnFavorites"
+        app:layout_constraintTop_toBottomOf="@+id/btnFavorites" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/cairo_semibold"
+        android:gravity="center"
+        android:text="Library"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="170dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="48dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

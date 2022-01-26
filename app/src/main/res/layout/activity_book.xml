@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:id="@+id/imageViewBook"
+                android:layout_width="162dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="65dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/btnCurrentlyReading"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="CurrentlyReading"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toTopOf="@+id/imageViewBook" />
+
+            <Button
+                android:id="@+id/btnWantToRead"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Want To Read"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/btnCurrentlyReading" />
+
+            <Button
+                android:id="@+id/btnAlreadyRead"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Already Read"
+                android:textAllCaps="false"
+                app:layout_constraintStart_toStartOf="@+id/btnWantToRead"
+                app:layout_constraintTop_toBottomOf="@+id/btnWantToRead" />
+
+            <Button
+                android:id="@+id/btnAddToFavorites"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Add To Favorites"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="@+id/btnAlreadyRead"
+                app:layout_constraintStart_toStartOf="@+id/btnAlreadyRead"
+                app:layout_constraintTop_toBottomOf="@+id/btnAlreadyRead" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="216dp" />
+
+            <TextView
+                android:id="@+id/txtDesShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Description"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/txtPagesShow" />
+
+            <TextView
+                android:id="@+id/txtPagesShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="pages"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/authorNameShow" />
+
+            <TextView
+                android:id="@+id/txtNumPages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="120"
+                app:layout_constraintBottom_toBottomOf="@+id/txtPagesShow"
+                app:layout_constraintStart_toStartOf="@+id/guideline7"
+                app:layout_constraintTop_toTopOf="@+id/txtPagesShow" />
+
+            <TextView
+                android:id="@+id/longDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Long description here"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/txtDesShow" />
+
+            <TextView
+                android:id="@+id/bookNametxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game Of Thrones"
+                app:layout_constraintBottom_toBottomOf="@+id/bookNameShow"
+                app:layout_constraintStart_toStartOf="@+id/guideline7"
+                app:layout_constraintTop_toTopOf="@+id/bookNameShow"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/authorNametxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mohamad Atif"
+                app:layout_constraintBottom_toBottomOf="@+id/authorNameShow"
+                app:layout_constraintStart_toStartOf="@+id/guideline7"
+                app:layout_constraintTop_toTopOf="@+id/authorNameShow"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/authorNameShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Author"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/bookNameShow" />
+
+            <TextView
+                android:id="@+id/bookNameShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Name"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="29dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="365dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="171dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
