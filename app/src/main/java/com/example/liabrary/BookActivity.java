@@ -159,24 +159,3 @@ public class BookActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 }
-//: i should learn back button
-
-//        loop2:
-//        for(Book b : Utils.getInstance().getAlreadyReadBooks())
-//        {
-//            if(b.getId() == clickedBook.getId() ){
-//                bookExist = true;
-//                break loop2;
-//            }
-//        }
-//
-//        loop3:
-//        for(Book b : Utils.getInstance().getWantToReadBooks())
-//        {
-//            if(b.getId() == clickedBook.getId() ){
-//                bookExist = true;
-//                break loop3;
-//            }
-//        }
-//    }
-
