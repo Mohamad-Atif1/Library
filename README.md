@@ -13,7 +13,7 @@ This is a mobile application developed using Android Studio with Java. The app a
 [main page]()
 [book page]()
 [all book page]()
-License
-This project is licensed under the MIT License. See the LICENSE.md file for details.
+## License
+- This project is licensed under the MIT License. See the LICENSE.md file for details.
 
 
