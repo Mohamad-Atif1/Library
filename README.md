@@ -10,9 +10,9 @@ This is a mobile application developed using Android Studio with Java. The app a
 - Android Studio
 - Java
 ## Screenshots
-- [main page](mainpage.png)
-- [book page](book page.png)
-- [all book page](all books page.png)
+- [main page](main_page.png)
+- [book page](book_page.png)
+- [all book page](all_books.png)
 ## License
 - This project is licensed under the MIT License. See the LICENSE.md file for details.
 
