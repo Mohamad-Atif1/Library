@@ -10,7 +10,7 @@ This is a mobile application developed using Android Studio with Java. The app a
 - Android Studio
 - Java
 ## Screenshots
-- [main page](main page.png)
+- [main page](mainpage.png)
 - [book page](book page.png)
 - [all book page](all books page.png)
 ## License
